@@ -9,6 +9,7 @@ const cookpediaServer = express()
 cookpediaServer.use(cors())
 cookpediaServer.use(express.json())
 cookpediaServer.use(routes)
+cookpediaServer.use('/uploads',express.static('./uploads'))
 
 const PORT = 3000
 
